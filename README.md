@@ -37,10 +37,11 @@ Edit `Vagrantfile` in root directory.
 
 ### Run
 After editing `docker_cloud_username` and `docker_cloud_api_key` start a virtual machine.  
-`vagrant up.`
 
-Video:
-<iframe src="https://player.vimeo.com/video/159706184" width="500" height="354" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    vagrant up
+
+Video:  
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/mxVDtPU1Dvw/0.jpg)](https://www.youtube.com/watch?v=mxVDtPU1Dvw)
 
 New node added into Docker Cloud  
 <a href="images/005.jpg"><img  width="300px" src="images/005.jpg"></a>
