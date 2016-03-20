@@ -1,0 +1,13 @@
+---
+- name: Install easy_install
+  yum: name=python-setuptools state=present
+- name: Install pip
+  raw: easy_install pip
+- name: Install docker-cloud
+  raw: pip install docker-cloud
+
+- name: Add environments
+  template: src=environment.j2 dest=/etc/environment mode=0644
+
+- name: Connect to Docker Cloud
+  raw: docker-cloud node byo | grep curl > /tmp/cmd; bash /tmp/cmd; rm -f /tmp/cmd

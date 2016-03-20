@@ -1,0 +1,8 @@
+---
+- name: Docker Cloud node 
+  hosts: all
+  become: true
+  become_user: root
+
+  roles:
+    - docker-cloud
